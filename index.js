@@ -5,6 +5,16 @@ const PORT = process.env.PORT || 8000; // eslint-disable-line
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+const db = require("./app/models");
+db.mongoose
+  .connect(db.url)
+  .then(() => {
+    console.log("Database Connected");
+  })
+  .catch((err) => {
+    console.log("Cant Connect Database", err);
+  });
+
 app.get("/", (req, res) => {
   res.json({
     message: "Server-side for QuickCart",
