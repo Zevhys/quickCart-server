@@ -26,3 +26,47 @@ exports.findCart = (req, res) => {
       res.status(409).send({ message: err.message });
     });
 };
+
+exports.addToCart = (req, res) => {
+  const id = Number(req.params.id);
+  const productCode = String(req.body.product);
+
+  Order.updateOne(
+    {
+      user_id: id,
+    },
+    {
+      $addToSet: {
+        cart_items: productCode,
+      },
+    }
+  )
+    .then((result) => {
+      res.send(result);
+    })
+    .catch((err) => {
+      res.status(409).send({ message: err.message });
+    });
+};
+
+exports.removeFromCart = (req, res) => {
+  const id = Number(req.params.id);
+  const productCode = String(req.params.product);
+
+  Order.updateOne(
+    {
+      user_id: id,
+    },
+    {
+      $pull: {
+        cart_items: productCode,
+      },
+    }
+  )
+    .then((result) => {
+      res.send(result);
+    })
+    .catch((err) => {
+      res.status(409).send({ message: err.message });
+    });
+};
