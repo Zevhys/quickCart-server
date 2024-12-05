@@ -2,7 +2,7 @@ module.exports = (mongoose) => {
   const productSchema = mongoose.Schema({
     code: String,
     name: String,
-    price: Number,
+    price: String,
     description: String,
     imageUrl: String,
     averrageRating: Number,
