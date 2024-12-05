@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 8000; // eslint-disable-line
+const PORT = process.env.PORT || 8000;
 const path = require("path");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use("/img", express.static(path.join(__dirname, "/img"))); // eslint-disable-line
+app.use("/img", express.static(path.join(__dirname, "/img")));
 
 const db = require("./app/models");
 db.mongoose
