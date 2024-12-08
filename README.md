@@ -1,6 +1,6 @@
 # quickCart-server
 
-[![Author](http://img.shields.io/badge/author-@Zevhys-blue.svg)](https://www.linkedin.com/in/rakha-djauhari/) [![GitHub license](https://img.shields.io/github/license/Zevhys/quickCart-client)](https://github.com/Zevhys/quickCart-client/blob/main/LICENSE) ![GitHub repo size](https://img.shields.io/github/repo-size/Zevhys/quickCart-client) [![ESLint](https://img.shields.io/github/actions/workflow/status/Zevhys/quickCart-client/eslint.yml?label=ESLint&logo=eslint)](https://github.com/Zevhys/quickCart-client/actions/workflows/eslint.yml) ![Dependabot Status](https://img.shields.io/badge/dependabot-active-brightgreen?logo=dependabot)
+[![Author](http://img.shields.io/badge/author-@Zevhys-blue.svg)](https://www.linkedin.com/in/rakha-djauhari/) [![GitHub license](https://img.shields.io/github/license/Zevhys/quickCart-client)](https://github.com/Zevhys/quickCart-server/blob/main/LICENSE) ![GitHub repo size](https://img.shields.io/github/repo-size/Zevhys/quickCart-server) [![ESLint](https://img.shields.io/github/actions/workflow/status/Zevhys/quickCart-server/eslint.yml?label=ESLint&logo=eslint)](https://github.com/Zevhys/quickCart-client/actions/workflows/eslint.yml) ![Dependabot Status](https://img.shields.io/badge/dependabot-active-brightgreen?logo=dependabot)
 
 This is the backend server for the quickCart application. It handles data storage, API endpoints, and server-side logic to ensure smooth functionality.
 
