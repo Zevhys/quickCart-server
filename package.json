@@ -26,7 +26,8 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "mongoose": "^8.8.3",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "express-rate-limit": "^7.4.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
