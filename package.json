@@ -1,0 +1,38 @@
+{
+  "name": "quickcart-server",
+  "version": "1.0.0",
+  "description": "Server-side for QuickCart",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Zevhys",
+  "license": "MIT",
+  "keywords": [
+    "Client",
+    "Server",
+    "MongoDB",
+    "Express",
+    "Vue.js",
+    "Node.js",
+    "Fullstack"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zevhys/quickCart-Server"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.3",
+    "serve-favicon": "^2.5.0",
+    "express-rate-limit": "^7.4.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "globals": "^15.12.0",
+    "nodemon": "^3.1.7"
+  }
+}
